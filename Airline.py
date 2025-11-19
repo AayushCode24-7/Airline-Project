@@ -1,7 +1,19 @@
 # Name - [Aayush Jindal]
-
 # Airline Information System
 # Features: Add, Search, Book, Cancel, Modify, Delete flights and generate fare reports
+
+# Password protection
+import getpass
+while True:
+    password = getpass.getpass('Enter Your Password: ')
+    rewrite_pass = getpass.getpass('Rewrite Your Password: ')
+    if rewrite_pass == password:
+        print("Password Matched.")
+        break
+    else:
+        print("Password Does Not Match. Try again.\n")
+        
+# Dictionary For Flights
 
 flights = [
     {'no': 'AI101', 'src': 'Delhi', 'dest': 'Mumbai', 'seats': 120, 'fare': 4500},
